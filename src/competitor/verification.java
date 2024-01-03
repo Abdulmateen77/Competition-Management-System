@@ -8,6 +8,15 @@ class Verification {
     private String category;
     private String level;
 
+    public Verification(String name, Date dob, String email, String category, String level) {
+        this.name = name;
+        this.dob = dob;
+        this.email = email;
+        this.category = category;
+        this.level = level;
+    }
+
+
     public boolean validateData() {
         // Basic validation checks
         if (name == null || name.isEmpty()) {
