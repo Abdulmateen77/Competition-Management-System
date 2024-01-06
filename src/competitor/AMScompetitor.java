@@ -1,69 +1,103 @@
 
 package competitor;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
-public class competitor {
+public class AMScompetitor {
 
+    private static List<AMScompetitor> competitors = new ArrayList<>();
     private static int competitorCount = 0;
-
     private int competitorNumber;
-    private String name;
-    private Date dob;
+    private final String name;
+    private final Date dob;
+    private static String email;
     private String country;
-    private String category;
-    private String level;
+    private static String category;
+    private final String level;
     private Verification verification;
     private int[] scores;
 
+
     // Constructor
-    public competitor(String name, Date dob, String country, String category, String level) {
+    public AMScompetitor(String name, Date dob, String email, String category, String level) {
         this.name = name;
         this.dob = dob;
-        this.country = country;
-        this.category = category;
+        AMScompetitor.email = email;
+        AMScompetitor.category = category;
         this.level = level;
-        this.competitorNumber = ++competitorCount;
     }
 
-    public String getCategory() {
+    public static String getEmail(){
+        return email;
+    }
+    public static String getCategory() {
         return category;
     }
 
-    public void registerCompetitor(String name, Date dob, String email, String category, String level) {
+    public int[] getScores() {
+        return scores;
+    }
+
+    public void setScores(int[] scores) {
+        this.scores = scores;
+    }
+
+    public int registerCompetitor(String name, Date dob, String email, String category, String level) {
+
         // Validate data
         Verification verification = new Verification(name, dob, email, category, level);
         if (!verification.validateData()) {
             System.out.println("Registration failed. Please check the provided data.");
-            return;
+            return -1;
         }
 
         // Check for existing competitor with the same email and category
-        Competitor existingCompetitor = findCompetitorByEmailAndCategory(email, category);
+        AMScompetitor existingCompetitor = findCompetitorByEmailAndCategory(email, category);
         if (existingCompetitor != null) {
-            if (existingCompetitor.getCategory().equals(category)) {
+            if (getCategory().equals(category)) {
                 System.out.println("Registration refused. Competitor with the same email and category already exists.");
+                return -1;
             } else {
                 // Registration accepted with a different category
                 competitorNumber = ++competitorCount; // Allocate a new competitor number
+                AMScompetitor newCompetitor = new AMScompetitor(name, dob, email, category, level);
                 System.out.println("Competitor registered successfully with a different category!");
+                return newCompetitor.getCompetitorNumber();
             }
         } else {
             // Registration accepted
             competitorNumber = ++competitorCount; // Allocate a new competitor number
+            AMScompetitor newCompetitor = new AMScompetitor(name, dob, email, category, level);
+            competitors.add(newCompetitor);
             System.out.println("Competitor registered successfully!");
+            return getCompetitorNumber();
         }
     }
 
-    private Competitor findCompetitorByEmailAndCategory(String email, String category) {
-        // Placeholder implementation, replace with your actual logic
-        return null;
+
+    private AMScompetitor findCompetitorByEmailAndCategory(String email, String category) {
+        for (AMScompetitor competitor : competitors) {
+            if (competitor.getEmail().equals(email) && competitor.getCategory().equals(category)) {
+                return competitor;
+            }
+        }
+        return null; // No match found
     }
 
+    public int getCompetitorNumber() {
+
+        return ++competitorCount;
+    }
 
     public double getOverallScore(){
-        return 5;
+        int sum = 0;
+        for (int score : scores) {
+            sum += score;
+        }
+        return (double) sum / scores.length;
     }
     public String getfullDetails(){
         return String.format("Competitor number %d, name %s, country %s.\n%s is a %s aged %d and received these scores: %s\nThis gives him an overall score of %.2f.",
@@ -90,7 +124,6 @@ public class competitor {
     }
 
     public int[] getScoreArray() {
-        // Placeholder values, replace with your actual scores
         return scores;
     }
     public double calculateOverallScore() {
