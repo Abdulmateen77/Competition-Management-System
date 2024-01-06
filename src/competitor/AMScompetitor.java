@@ -77,7 +77,7 @@ public class AMScompetitor {
         }
     }
 
-
+     //Find competitor Filter
     private AMScompetitor findCompetitorByEmailAndCategory(String email, String category) {
         for (AMScompetitor competitor : competitors) {
             if (competitor.getEmail().equals(email) && competitor.getCategory().equals(category)) {
