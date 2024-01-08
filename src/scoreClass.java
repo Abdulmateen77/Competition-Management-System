@@ -6,7 +6,7 @@ public class scoreClass {
 
     int [] score;
 
-    public void getbasicScore(){
+    public Sting getbasicScore(){
         return;
     }
     public int[] getOverallScore(){
