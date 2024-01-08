@@ -23,7 +23,7 @@ public class staffMember {
 
     }
 
-    public removeCompetitor(){
+    public void removeCompetitor(){
 
     }
 
