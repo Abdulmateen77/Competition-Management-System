@@ -8,7 +8,6 @@ import java.util.Scanner;
 import static competitor.CompetitorList.readCompetitorDetails;
 
 public class Manager {
-
     public void main(String[] args) {
 
         SwingUtilities.invokeLater(() -> new CompetitionGUI());
