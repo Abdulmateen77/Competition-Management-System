@@ -74,8 +74,6 @@ public class CompetitionGUI extends Component {
             }
         });
 
-
-
         JPanel panel = new JPanel();
 
         // Adds button to panel
