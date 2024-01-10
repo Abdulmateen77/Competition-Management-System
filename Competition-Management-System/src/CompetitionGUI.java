@@ -364,6 +364,7 @@ public class CompetitionGUI extends Component {
         }
     }
 
+    
     public void EditCompetitorDetails(){
         competitorList.readCompetitorDetails("RunCompetitor.csv");
 
