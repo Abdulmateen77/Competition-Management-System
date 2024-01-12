@@ -13,7 +13,7 @@ public class Manager {
     // The main method to initiate the program
     public void main(String[] args) {
 
-        
+        // Set up the GUI for competition using Swing
         SwingUtilities.invokeLater(() -> new CompetitionGUI());
 
         try {
