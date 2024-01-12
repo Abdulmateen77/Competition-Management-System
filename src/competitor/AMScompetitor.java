@@ -130,7 +130,6 @@ public class AMScompetitor {
         if (scores.length == 0) {
             return 0.0;
         }
-
         int sum = 0;
         for (int score : scores) {
             sum += score;
