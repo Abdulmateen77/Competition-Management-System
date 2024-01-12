@@ -10,7 +10,7 @@ import static competitor.CompetitorList.readCompetitorDetails;
 
 // The main class responsible for managing competitor information and user interaction
 public class Manager {
-    
+    // The main method to initiate the program
     public void main(String[] args) {
 
         // Set up the GUI for competition using Swing
