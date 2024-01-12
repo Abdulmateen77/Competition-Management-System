@@ -1,3 +1,4 @@
+// Import necessary classes from the competitor package and other standard Java libraries
 import competitor.AMScompetitor;
 import competitor.CompetitorList;
 
@@ -7,16 +8,19 @@ import java.util.Scanner;
 
 import static competitor.CompetitorList.readCompetitorDetails;
 
+// The main class responsible for managing competitor information and user interaction
 public class Manager {
+    // The main method to initiate the program
     public void main(String[] args) {
 
+        
         SwingUtilities.invokeLater(() -> new CompetitionGUI());
 
         try {
-
             // Create a scanner for user input
             Scanner scanner = new Scanner(System.in);
 
+            // Continue running the program until user chooses to exit
             while (true) {
                 // Display menu options
                 System.out.println("\nChoose an option:");
@@ -29,36 +33,38 @@ public class Manager {
                 int choice = scanner.nextInt();
                 String relativePath = "RunCompetitor.csv";
 
-                // Create a competitor.CompetitorList and read competitor details from CSV
+                // Create a CompetitorList and read competitor details from CSV file
                 CompetitorList competitorList = readCompetitorDetails(relativePath);
 
-
+                // Perform actions based on user's choice
                 if (choice == 1) {
+                    // Display full details for all competitors
                     AMScompetitor[] competitorsArray = competitorList.getCompetitors().toArray(new AMScompetitor[0]);
                     for (AMScompetitor competitor : competitorsArray) {
                         System.out.println(competitor.getfullDetails());
                     }
                 } else if (choice == 2) {
+                    // Display short details for a specific competitor
                     System.out.print("Enter competitor number to display short details: ");
                     int competitorNumber = scanner.nextInt();
                     competitorList.displayShortDetails(competitorNumber);
                 } else if (choice == 3) {
-                    competitorList.generateFinalReport( "FinalReport.txt");
-                    System.out.println("view Final Report txt file for the summary report");
+                    // Generate and display the final report
+                    competitorList.generateFinalReport("FinalReport.txt");
+                    System.out.println("View FinalReport.txt file for the summary report");
                 } else if (choice == 4) {
+                    // Exit the program
                     System.out.println("Exiting program. Goodbye!");
                     scanner.close();
                     System.exit(0);
                 } else {
+                    // Inform the user of an invalid choice
                     System.out.println("Invalid choice. Please enter a valid option.");
                 }
             }
         } catch (IOException e) {
+            // Handle IO exception
             System.out.println("Error: " + e.getMessage());
         }
     }
-
 }
-
-
-
