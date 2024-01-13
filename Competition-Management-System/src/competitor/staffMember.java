@@ -63,11 +63,11 @@ public class staffMember {
     }
 
     // Register new competitor
-//    protected void registerCompetitor(String name, int age, String email, String category, String level) throws IOException {
-//        if (validateAccess()) {
-//            AMScompetitor.registerCompetitor(name, age, email, category, level);
-//        }
-//    }
+   protected void registerCompetitor(String name, int age, String email, String category, String level) throws IOException {
+        if (validateAccess()) {
+            AMScompetitor.registerCompetitor(name, age, email, category, level);
+        }
+    }
 
     // Remove competitor
     protected void removeCompetitor(int competitorNumber) {
