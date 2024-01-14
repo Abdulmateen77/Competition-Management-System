@@ -32,7 +32,7 @@ public class AMScompetitor {
 
     }
 
-    // Constructor with different attributes
+    //Constructor with different attributes
 
     public AMScompetitor(int competitorNumber, String name, int age, String gender, String country, int[] scores){
         this.competitorNumber = competitorNumber;
