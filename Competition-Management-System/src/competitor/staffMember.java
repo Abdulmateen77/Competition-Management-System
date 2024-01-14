@@ -77,10 +77,10 @@ public class staffMember {
     }
 
 //     Amend competitor details
-//    protected void amendCompetitor(AMScompetitor updatedCompetitor) {
-//        if (validateAccess()) {
-//            competitorRegistry.put(AMScompetitor.getCompetitorNumber(), updatedCompetitor);
-//        }
-//    }
+    protected void amendCompetitor(AMScompetitor updatedCompetitor) {
+        if (validateAccess()) {
+            competitorRegistry.put(AMScompetitor.getCompetitorNumber(), updatedCompetitor);
+        }
+    }
 }
 
