@@ -29,6 +29,7 @@ public class scoreClass {
         return competitor != null ? competitor.scores : null;
     }
 
+    
     // Method to get overall score
     public static int[] getOverallScore(int competitorNumber) {
         scoreClass competitor = competitorScores.get(competitorNumber);
