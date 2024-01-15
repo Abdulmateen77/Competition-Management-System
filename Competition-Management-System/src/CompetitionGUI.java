@@ -315,7 +315,7 @@ public class CompetitionGUI extends Component {
                     "View Competitor Details",
                     JOptionPane.PLAIN_MESSAGE);
 
-            // Checks if the user entered a competitor number
+            //Checks if the user entered a competitor number
             if (competitorNumberInput != null && !competitorNumberInput.isEmpty()) {
                 try {
                     int competitorNumber = Integer.parseInt(competitorNumberInput);
