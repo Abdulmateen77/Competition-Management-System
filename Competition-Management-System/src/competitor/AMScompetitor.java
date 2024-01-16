@@ -22,7 +22,7 @@ public class AMScompetitor {
 
 
 
-    // Constructor
+    //Constructor
     public AMScompetitor(String name, int age, String email, String category, String level) {
         this.name = name;
         this.age = age;
@@ -78,14 +78,14 @@ public class AMScompetitor {
     }
     public int registerCompetitor(String name, int age, String email, String category, String level) throws IOException {
 
-        // Validate data
+        //Validate data
         Verification verification = new Verification(name, age, email, category, level);
         if (!verification.validateData()) {
             System.out.println("Registration failed. Please check the provided data.");
             return -1;
         }
 
-        // Checks for existing competitor with the same email and category
+        //Checks for existing competitor with the same email and category
         AMScompetitor existingCompetitor = findCompetitorByEmailAndCategory(email, category);
         if (existingCompetitor != null) {
             if (getCategory().equals(category)) {
