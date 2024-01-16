@@ -99,7 +99,7 @@ public class AMScompetitor {
                 return getCompetitorNumber();
             }
         } else {
-            // Registration accepted
+            //Registration accepted
             competitorNumber = ++competitorCount;
             AMScompetitor newCompetitor = new AMScompetitor(name, age, email, category, level);
             competitorList.addCompetitor(newCompetitor);
