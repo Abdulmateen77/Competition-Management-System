@@ -21,7 +21,7 @@ public class AMScompetitor {
     private int[] scores;
 
 
-    // Constructor
+    //Constructor
     public AMScompetitor(String name, Date dob, String email, String category, String level) {
         this.name = name;
         this.dob = dob;
@@ -47,7 +47,7 @@ public class AMScompetitor {
 
     public int registerCompetitor(String name, Date dob, String email, String category, String level) {
 
-        // Validate data
+        //Validate data
         Verification verification = new Verification(name, dob, email, category, level);
         if (!verification.validateData()) {
             System.out.println("Registration failed. Please check the provided data.");
