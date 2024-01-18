@@ -61,14 +61,14 @@ public class AMScompetitor {
                 System.out.println("Registration refused. Competitor with the same email and category already exists.");
                 return -1;
             } else {
-                // Registration accepted with a different category
+                //Registration accepted with a different category
                 competitorNumber = ++competitorCount; // Allocate a new competitor number
                 AMScompetitor newCompetitor = new AMScompetitor(name, dob, email, category, level);
                 System.out.println("Competitor registered successfully with a different category!");
                 return newCompetitor.getCompetitorNumber();
             }
         } else {
-            // Registration accepted
+            //Registration accepted
             competitorNumber = ++competitorCount; // Allocate a new competitor number
             AMScompetitor newCompetitor = new AMScompetitor(name, dob, email, category, level);
             competitors.add(newCompetitor);
