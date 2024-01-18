@@ -1,4 +1,4 @@
-// Import necessary classes from the competitor package and other standard Java libraries
+//Import necessary classes from the competitor package and other standard Java libraries
 import competitor.AMScompetitor;
 import competitor.CompetitorList;
 
@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 import static competitor.CompetitorList.readCompetitorDetails;
 
-// The main class responsible for managing competitor information and user interaction
+//The main class responsible for managing competitor information and user interaction
 public class Manager {
-    // The main method to initiate the program
+    //The main method to initiate the program
     public void main(String[] args) {
 
-        // Set up the GUI for competition using Swing
+        //Set up the GUI for competition using Swing
         SwingUtilities.invokeLater(() -> new CompetitionGUI());
 
         try {
