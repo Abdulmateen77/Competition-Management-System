@@ -397,10 +397,10 @@ public class CompetitionGUI extends Component {
 
         JScrollPane scrollPane = new JScrollPane(table);
 
-        // Creates a new JFrame to display the editable table
+        //Creates a new JFrame to display the editable table
         JFrame tableFrame = new JFrame("Edit Competitor Details");
 
-        // Shows a confirmation dialog
+        //Shows a confirmation dialog
         int result = JOptionPane.showConfirmDialog(
                 null,
                 scrollPane,
@@ -429,7 +429,7 @@ public class CompetitionGUI extends Component {
                 "Remove Competitor",
                 JOptionPane.PLAIN_MESSAGE);
 
-        // Checks if the user entered a competitor number
+        //Checks if the user entered a competitor number
         if (competitorNumberInput != null && !competitorNumberInput.isEmpty()) {
             try {
                 int competitorNumberToRemove = Integer.parseInt(competitorNumberInput);
@@ -443,7 +443,7 @@ public class CompetitionGUI extends Component {
                     }
                 }
 
-                // Checks if the competitor was found
+                //Checks if the competitor was found
                 if (indexToRemove != -1) {
                     // Remove the competitor from the list
                     competitors.remove(indexToRemove);
