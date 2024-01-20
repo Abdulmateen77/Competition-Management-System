@@ -149,7 +149,7 @@ public class AMScompetitor {
                 competitorNumber, getInitials(), getOverallScore());
     }
 
-    // Helper method to get initials from the name
+    //Helper method to get initials from the name
     private String getInitials() {
         String[] nameParts = name.split(" ");
         StringBuilder initials = new StringBuilder();
