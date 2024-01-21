@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-
+/**
+ * Represents a staff member in the competition management system.
+ */
 public class StaffMember {
 
     private static int staffIDCounter = 0;
