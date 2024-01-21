@@ -9,10 +9,10 @@ public class staffMember {
     private int staffID;
     private String role;
 
-    // Map to store competitors based on their competitorNumber
+    //Map to store competitors based on their competitorNumber
     private static Map<Integer, AMScompetitor> competitorRegistry = new HashMap<>();
 
-    // Constructor
+    //Constructor
     public staffMember(String role) {
         this.role = role;
         this.staffID = ++staffIDCounter;
