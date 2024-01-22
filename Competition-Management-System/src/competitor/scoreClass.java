@@ -3,42 +3,43 @@ package competitor;
 import java.util.HashMap;
 import java.util.Map;
 
-public class scoreClass {
+public class ScoreClass {
+    
     private static int competitionIDCounter = 0;
     private static int competitorIDCounter = 0;
+
+    // Instance variables for scoreClass
     private int competitionID;
     public int competitorID;
     private String level;
     private int[] scores;
 
-
     // Map to store competitors' scores based on their competitorID
-    private static final Map<Integer, scoreClass> competitorScores = new HashMap<>();
+    private static final Map<Integer, ScoreClass> competitorScores = new HashMap<>();
 
     // Constructor that takes data from Competitor class
-    public scoreClass(AMScompetitor competitor) {
+    public ScoreClass(AMSCompetitor competitor) {
         this.level = competitor.getLevel();
         this.scores = competitor.getScoreArray();
-        this.competitionID = competition.getCompetitionID();
+        this.competitionID = competitor.getCompetitionID();
         competitorScores.put(competitorID, this);
     }
 
-    // Method to get basic score
+    // Method to get basic score for a specific competitor
     public int[] getBasicScore(int competitorNumber) {
-        scoreClass competitor = competitorScores.get(competitorNumber);
+        ScoreClass competitor = competitorScores.get(competitorNumber);
         return competitor != null ? competitor.scores : null;
     }
 
-    
-    // Method to get overall score
+    // Method to get overall score for a specific competitor
     public static int[] getOverallScore(int competitorNumber) {
-        scoreClass competitor = competitorScores.get(competitorNumber);
+        ScoreClass competitor = competitorScores.get(competitorNumber);
         return competitor != null ? competitor.scores : null;
     }
 
-    // Method to get summary
+    // Method to get a summary of a competitor's information
     public static String getSummary(int competitorNumber) {
-        scoreClass competitor = competitorScores.get(competitorNumber);
+        ScoreClass competitor = competitorScores.get(competitorNumber);
         if (competitor != null) {
             return String.format("Competitor number %d, Competition ID %d, Level %s, Scores: %s",
                     competitor.competitorID, competitor.competitionID, competitor.level, arrayToString(competitor.scores));
@@ -59,6 +60,4 @@ public class scoreClass {
         result.append("]");
         return result.toString();
     }
-
-
 }
