@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ScoreClass {
-    
+    // Counter for unique competition and competitor IDs
     private static int competitionIDCounter = 0;
     private static int competitorIDCounter = 0;
 
