@@ -1,11 +1,17 @@
 package competitor;
 
+/**
+ * The Verification class is responsible for validating and storing competitor information.
+ */
 public class Verification {
+
+    // Member variables to store competitor details
     public static String name;
     private static int age;
     private static String email;
     private static String category;
     private static String level;
+
 
     public Verification(String name, int age, String email, String category, String level) {
         Verification.name = name;
@@ -15,6 +21,10 @@ public class Verification {
         Verification.level = level;
     }
 
+    /**
+     * Validates the competitor data by performing basic checks.
+     * @return True if data is valid, false otherwise
+     */
     public boolean validateData() {
         // Basics validation checks
         if (name == null || name.isEmpty()) {
@@ -22,25 +32,28 @@ public class Verification {
             return false;
         }
         if (age == 0) {
-            System.out.println("age is required.");
+            System.out.println("Age is required.");
             return false;
         }
         if (email == null){
-            System.out.println("email address is required");
+            System.out.println("Email address is required.");
             return false;
         }
         if (category == null){
-            System.out.println("category is required");
+            System.out.println("Category is required.");
             return false;
         }
         if (level == null){
-            System.out.println("level is required");
+            System.out.println("Level is required.");
+            return false;
         }
         return true;
     }
 
+    /**
+     * Prints a message indicating the need to resubmit the form.
+     */
     public static void resubmitForm() {
-
         System.out.println("Resubmit the Form");
     }
 }
