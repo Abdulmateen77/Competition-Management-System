@@ -41,7 +41,7 @@ public class staffMember {
     }
 }
 // Class for emergency reponse team
-epublic staffMember extends EmegencyResponse(){
+epublic staffMember extends EmergencyResponse(){
     private int staffId;
     public provideSupport();
 }
