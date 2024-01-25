@@ -1,7 +1,11 @@
+//Staff class for completetion management system
 public class staffMember {
+    //staff ID
     int staffID;
+    // staff role string
     String role;
 
+    // method to validate the access of a staff member
     public boolean validateAccess(){
         return true;
     }
