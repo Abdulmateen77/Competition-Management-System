@@ -5,7 +5,7 @@ public class  EmergencyResponse extends staffMember {
     public EmergencyResponse(String role) {
         super(role);
     }
-
+    //method to provide support 
     public void ProvideSupport(){
         System.out.println("providing emergency support... "); ;
     }
