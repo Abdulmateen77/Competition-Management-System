@@ -3,6 +3,7 @@ package competitor;
 import java.io.IOException;
 import java.util.Arrays;
 
+// Competitor Class
 public class AMScompetitor {
 
     private static int competitorCount = 0;
