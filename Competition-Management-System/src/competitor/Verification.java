@@ -3,6 +3,7 @@ package competitor;
 /**
  * The Verification class is responsible for validating and storing competitor information.
  */
+
 public class Verification {
 
     // Member variables to store competitor details
