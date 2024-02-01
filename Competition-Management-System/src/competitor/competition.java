@@ -3,14 +3,14 @@ package competitor;
 // The competition class represents a generic competition with various attributes.
 public class competition {
     
-    // Static attributes to store information about the competition.
+    //Static attributes to store information about the competition.
     public static int competitionID;
     public static String competitionName;
     public static String Category;
     public static int ageLimit;
     public static String Level;
 
-    // Getter method to retrieve the competition ID.
+    //Getter method to retrieve the competition ID.
     public static int getCompetitionID(){
         return competitionID;
     }
