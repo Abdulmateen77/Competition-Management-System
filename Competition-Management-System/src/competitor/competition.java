@@ -10,7 +10,7 @@ public class competition {
     public static int ageLimit;
     public static String Level;
 
-   
+    // Getter method to retrieve the competition ID.
     public static int getCompetitionID(){
         return competitionID;
     }
