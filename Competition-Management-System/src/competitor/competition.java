@@ -1,6 +1,6 @@
 package competitor;
 
-// The competition class represents a generic competition with various attributes.
+//The competition class represents a generic competition with various attributes.
 public class competition {
     
     //Static attributes to store information about the competition.
