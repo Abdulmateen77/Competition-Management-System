@@ -15,7 +15,7 @@ public class competition {
         return competitionID;
     }
 
-    // Constructor to initialize the competition object with provided details.
+    //Constructor to initialize the competition object with provided details.
     public competition(int competitionID, String competitionName, String Category, int ageLimit, String Level){
         competition.competitionID = competitionID;
         competition.competitionName = competitionName;
@@ -24,7 +24,7 @@ public class competition {
         competition.Level = Level;
     }
 
-    // Method to get a formatted string containing competition details.
+    //Method to get a formatted string containing competition details.
     public static String getCompetitionDetails(){
         return competitionName + " with an ID " + competitionID + " in " + Category + " with an age limit of " + ageLimit + " for " + Level;
     }
