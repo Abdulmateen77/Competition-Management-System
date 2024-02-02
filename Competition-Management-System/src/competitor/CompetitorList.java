@@ -47,6 +47,7 @@ public class CompetitorList {
         return competitorList;
     }
 
+    // Saves Competitor score to a file
     public void saveCompetitorScoresToFile(String filePath, AMScompetitor competitorToSave) {
         try {
             // Creates a new list with updated scores
