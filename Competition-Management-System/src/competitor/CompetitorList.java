@@ -10,6 +10,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.Arrays;
 
+// Competitor list class detailss
 public class CompetitorList {
     private static List<AMScompetitor> competitorList;
 
@@ -28,7 +29,7 @@ public class CompetitorList {
     }
 
 
-
+     // Function to read competitor details file
     public static CompetitorList readCompetitorDetails(String fileName){
         CompetitorList competitorList = new CompetitorList();
         try (BufferedReader fileReader = new BufferedReader(new FileReader(fileName))){
