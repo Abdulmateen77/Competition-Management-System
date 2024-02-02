@@ -15,7 +15,7 @@ public class competition {
         return competitionID;
     }
 
-    //Constructor to initialize the competition object with provided details.
+    // Constructor to initialize the competition object with provided details.
     public competition(int competitionID, String competitionName, String Category, int ageLimit, String Level){
         competition.competitionID = competitionID;
         competition.competitionName = competitionName;
