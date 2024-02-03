@@ -3,12 +3,12 @@ package competitor;
 import java.io.IOException;
 import java.util.Arrays;
 
-// Competitor Class
+//Competitor Class
 public class AMScompetitor {
 
     private static int competitorCount = 0;
 
-    // Instance variables for competitor details
+    //Instance variables for competitor details
     private int competitorNumber;
     public String name;
     public int age;
