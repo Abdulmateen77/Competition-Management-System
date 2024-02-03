@@ -20,7 +20,7 @@ public class AMScompetitor {
     private static int[] scores;
     private Verification verification;
 
-    // Static variable to store a list of competitors
+    //Static variable to store a list of competitors
     public static CompetitorList competitorList;
 
     // Constructor for creating a competitor with basic details
