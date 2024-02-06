@@ -23,7 +23,7 @@ public class AMScompetitor {
     //Static variable to store a list of competitors
     public static CompetitorList competitorList;
 
-    // Constructor for creating a competitor with basic details
+    //Constructor for creating a competitor with basic details
     public AMScompetitor(String name, int age, String email, String category, String level) {
         this.name = name;
         this.age = age;
@@ -32,7 +32,7 @@ public class AMScompetitor {
         this.level = level;
     }
 
-    // Constructor for creating a competitor with additional details
+    //Constructor for creating a competitor with additional details
     public AMScompetitor(int competitorNumber, String name, int age, String gender, String country, int[] scores) {
         this.competitorNumber = competitorNumber;
         this.name = name;
