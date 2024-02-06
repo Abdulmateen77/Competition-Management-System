@@ -159,7 +159,7 @@ public class AMScompetitor {
                 competitorNumber, getInitials(), getOverallScore());
     }
 
-    // Helper method to get initials from the name
+    //Helper method to get initials from the name
     private String getInitials() {
         String[] nameParts = name.split(" ");
         StringBuilder initials = new StringBuilder();
@@ -173,7 +173,7 @@ public class AMScompetitor {
         return initials.toString().toUpperCase();
     }
 
-    // Method to calculate the overall score (alternative implementation)
+    //Method to calculate the overall score (alternative implementation)
     public double calculateOverallScore() {
         if (scores.length == 0) {
             return 0.0;
