@@ -13,7 +13,6 @@ The Competition Management System is a Java-based application designed to manage
 - **Graphical User Interface:** Provides a user-friendly interface for easy interaction.
 
 ## Getting Started
-
 ### Prerequisites
 
 - Java Development Kit (JDK) installed on your machine.
