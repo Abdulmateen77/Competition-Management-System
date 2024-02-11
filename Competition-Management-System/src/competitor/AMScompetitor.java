@@ -42,7 +42,7 @@ public class AMScompetitor {
         this.scores = scores;
     }
 
-    // Getter methods for accessing competitor details
+    //Getter methods for accessing competitor details
     public String getName() {
         return name;
     }
@@ -127,7 +127,7 @@ public class AMScompetitor {
         return null; // No match found
     }
 
-    // Method to calculate the overall score of a competitor
+    //Method to calculate the overall score of a competitor
     public double getOverallScore() {
         int sum = 0;
         for (int score : scores) {
@@ -136,7 +136,7 @@ public class AMScompetitor {
         return (double) sum / scores.length;
     }
 
-    // Method to get a formatted string with competitor data
+    //Method to get a formatted string with competitor data
     public String getCompetitorsdata() {
         return String.format("Competitor Number: %d, Name %s, %s Age:, Gender: %s, Country %s Received these scores: %s overall Score: %.2f.",
                 competitorNumber, name, age, gender, country, Arrays.toString(scores), getOverallScore());
