@@ -103,13 +103,13 @@ public class AMScompetitor {
                 return getCompetitorNumber();
             }
         } else {
-            // Registration accepted
+            //Registration accepted
             competitorNumber = ++competitorCount;
             AMScompetitor newCompetitor = new AMScompetitor(name, age, email, category, level);
             competitorList.addCompetitor(newCompetitor);
             System.out.println("Competitor registered successfully!");
 
-            // Save competitor details to a CSV file
+            // Save competitor details to a CSV fil
             competitorList.addCompetitor(newCompetitor);
             competitorList.writeCompetitorDetails("RunCompetitor.csv");
 
@@ -117,7 +117,7 @@ public class AMScompetitor {
         }
     }
 
-    // Helper method to find a competitor by email and category
+    //Helper method to find a competitor by email and category
     private static AMScompetitor findCompetitorByEmailAndCategory(String email, String category) {
         for (AMScompetitor competitor : competitorList.getCompetitors()) {
             if (getEmail().equals(email) && getCategory().equals(category)) {
