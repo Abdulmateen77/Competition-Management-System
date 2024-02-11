@@ -89,7 +89,7 @@ public class AMScompetitor {
             return -1;
         }
 
-        // Check for existing competitors with the same email and category
+        //Check for existing competitors with the same email and category
         AMScompetitor existingCompetitor = findCompetitorByEmailAndCategory(email, category);
         if (existingCompetitor != null) {
             if (getCategory().equals(category)) {
