@@ -68,7 +68,7 @@ public class CompetitorList {
                     })
                     .collect(Collectors.toList());
 
-            // Writes the entire list back to the file
+            //Writes the entire list back to the file
             try (FileWriter writer = new FileWriter(filePath)) {
                 for (AMScompetitor competitor : updatedCompetitors) {
                     writer.append(String.valueOf(competitor.getCompetitorNumber())).append(",");
@@ -100,7 +100,7 @@ public class CompetitorList {
         String gender = parts[3].trim();
         String country = parts[4].trim();
 
-        // Dynamically read scores based on the length
+        //Dynamically read scores based on the length
         int[] scores = new int[parts.length - 5];
         for (int i = 5; i < parts.length; i++) {
             scores[i - 5] = Integer.parseInt(parts[i].trim());
