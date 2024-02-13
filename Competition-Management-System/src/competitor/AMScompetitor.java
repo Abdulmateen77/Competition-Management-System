@@ -109,7 +109,7 @@ public class AMScompetitor {
             competitorList.addCompetitor(newCompetitor);
             System.out.println("Competitor registered successfully!");
 
-            // Save competitor details to a CSV fil
+            //Save competitor details to a CSV fil
             competitorList.addCompetitor(newCompetitor);
             competitorList.writeCompetitorDetails("RunCompetitor.csv");
 
@@ -142,18 +142,18 @@ public class AMScompetitor {
                 competitorNumber, name, age, gender, country, Arrays.toString(scores), getOverallScore());
     }
 
-    // Method to get a formatted string with competitor details
+    //Method to get a formatted string with competitor details
     public String getCompetitorDetails() {
         return String.format("Competitor Number: %d \n Name: %s\n Age: %d \n Gender: %s \n Country: %s", competitorNumber, name, age, gender, country, Arrays.toString(scores));
     }
 
-    // Method to get a formatted string with full competitor details
+    //Method to get a formatted string with full competitor details
     public String getfullDetails() {
         return String.format("Competitor Number: %d, Name %s, %s Age:, Gender: %s, Country %s.\n%s is a from %s aged %d and received these scores: %s\nThis gives him an overall score of %.2f.",
                 competitorNumber, name, age, gender, country, name, country, age, Arrays.toString(scores), getOverallScore());
     }
 
-    // Method to get a short formatted string with competitor details
+    //Method to get a short formatted string with competitor details
     public String getShortDetails() {
         return String.format("CN %d (%s) has an overall score of %.2f.",
                 competitorNumber, getInitials(), getOverallScore());
@@ -187,12 +187,12 @@ public class AMScompetitor {
         return (double) sum / scores.length;
     }
 
-    // Getter method for the competition level
+    //Getter method for the competition level
     public String getLevel() {
         return level;
     }
 
-    // Getter method for the array of scores
+    //Getter method for the array of scores
     public int[] getScoreArray() {
         return scores;
     }
