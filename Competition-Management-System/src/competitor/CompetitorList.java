@@ -10,7 +10,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.Arrays;
 
-// Competitor list class detailss
+//Competitor list class detailss
 public class CompetitorList {
     private static List<AMScompetitor> competitorList;
 
@@ -29,7 +29,7 @@ public class CompetitorList {
     }
 
 
-     // Function to read competitor details file
+     //Function to read competitor details file
     public static CompetitorList readCompetitorDetails(String fileName){
         CompetitorList competitorList = new CompetitorList();
         try (BufferedReader fileReader = new BufferedReader(new FileReader(fileName))){
@@ -47,10 +47,10 @@ public class CompetitorList {
         return competitorList;
     }
 
-    // Saves Competitor score to a file
+    //Saves Competitor score to a file
     public void saveCompetitorScoresToFile(String filePath, AMScompetitor competitorToSave) {
         try {
-            // Creates a new list with updated scores
+            //Creates a new list with updated scores
             List<AMScompetitor> updatedCompetitors = competitorList.stream()
                     .map(competitor -> {
                         if (competitor.getCompetitorNumber() == competitorToSave.getCompetitorNumber()) {
