@@ -142,20 +142,20 @@ public class CompetitorList {
                 }
             }
 
-            // Details of the competitor with the highest overall score
+            //Details of the competitor with the highest overall score
             AMScompetitor highestScorer = getHighestScorer();
             writer.write("\nDetails of the Highest Scorer:\n");
             if (highestScorer != null) {
                 writer.write(highestScorer.getfullDetails() + "\n");
             }
-            // Other summary statistics
+            //Other summary statistics
             writer.write("\nSummary Statistics:\n");
             writer.write("Average Overall Score: " + calculateAverageOverallScore() + "\n");
             writer.write("Total Scores: " + calculateTotalScores() + "\n");
             writer.write("Max Score: " + findMaxScore() + "\n");
             writer.write("Min Score: " + findMinScore() + "\n");
 
-            // Frequency report
+            //Frequency report
             writer.write("\nFrequency Report:\n");
             Map<Integer, Long> scoreFrequency = calculateScoreFrequency();
             scoreFrequency.forEach((score, count) -> {
