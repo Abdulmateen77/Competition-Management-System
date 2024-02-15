@@ -6,7 +6,7 @@ package competitor;
 
 public class Verification {
 
-    // Member variables to store competitor details
+    //Member variables to store competitor details
     public static String name;
     private static int age;
     private static String email;
@@ -34,7 +34,7 @@ public class Verification {
      * @return True if data is valid, false otherwise
      */
     public boolean validateData() {
-        // Basics validation checks
+        //Basics validation checks
         if (name == null || name.isEmpty()) {
             System.out.println("Name is required.");
             return false;
