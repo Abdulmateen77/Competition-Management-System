@@ -4,17 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ScoreClass {
-    // Counter for unique competition and competitor IDs
+    //Counter for unique competition and competitor IDs
     private static int competitionIDCounter = 0;
     private static int competitorIDCounter = 0;
 
-    // Instance variables for scoreClass
+    //Instance variables for scoreClass
     private int competitionID;
     public int competitorID;
     private String level;
     private int[] scores;
 
-    // Map to store competitors' scores based on their competitorID
+    //Map to store competitors' scores based on their competitorID
     private static final Map<Integer, ScoreClass> competitorScores = new HashMap<>();
 
     // Constructor that takes data from Competitor class
