@@ -17,7 +17,7 @@ public class ScoreClass {
     //Map to store competitors' scores based on their competitorID
     private static final Map<Integer, ScoreClass> competitorScores = new HashMap<>();
 
-    // Constructor that takes data from Competitor class
+    //Constructor that takes data from Competitor class
     public ScoreClass(AMSCompetitor competitor) {
         this.level = competitor.getLevel();
         this.scores = competitor.getScoreArray();
@@ -25,7 +25,7 @@ public class ScoreClass {
         competitorScores.put(competitorID, this);
     }
 
-    // Method to get basic score for a specific competitor
+    //Method to get basic score for a specific competitor
     public int[] getBasicScore(int competitorNumber) {
         ScoreClass competitor = competitorScores.get(competitorNumber);
         return competitor != null ? competitor.scores : null;
