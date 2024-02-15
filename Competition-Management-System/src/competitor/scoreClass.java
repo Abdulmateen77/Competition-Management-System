@@ -31,13 +31,13 @@ public class ScoreClass {
         return competitor != null ? competitor.scores : null;
     }
 
-    // Method to get overall score for a specific competitor
+    //Method to get overall score for a specific competitor
     public static int[] getOverallScore(int competitorNumber) {
         ScoreClass competitor = competitorScores.get(competitorNumber);
         return competitor != null ? competitor.scores : null;
     }
 
-    // Method to get a summary of a competitor's information
+    //Method to get a summary of a competitor's information
     public static String getSummary(int competitorNumber) {
         ScoreClass competitor = competitorScores.get(competitorNumber);
         if (competitor != null) {
