@@ -27,7 +27,6 @@ public class Verification {
         Verification.category = category;
         Verification.level = level;
     }
-
     
     /**
      * Validates the competitor data by performing basic checks.
