@@ -29,6 +29,7 @@ public class Verification {
         Verification.level = level;
     }
 
+    
     /**
      * Validates the competitor data by performing basic checks.
      * @return True if data is valid, false otherwise
