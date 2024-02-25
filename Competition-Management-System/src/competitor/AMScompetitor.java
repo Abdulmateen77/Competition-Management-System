@@ -80,7 +80,7 @@ public class AMScompetitor {
         scores = new int[]{(int) score1, (int) score2, (int) score3, (int) score4};
     }
 
-    //Method to register a new competitor
+    // Method to register a new competitor
     public int registerCompetitor(String name, int age, String email, String category, String level) throws IOException {
 
         //Validate data using the Verification class
