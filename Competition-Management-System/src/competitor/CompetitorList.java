@@ -133,7 +133,7 @@ public class CompetitorList {
 
     public void generateFinalReport(String fileName) throws IOException {
         try (FileWriter writer = new FileWriter(fileName)) {
-            // Table of competitors with full details
+            //Table of competitors with full details
             writer.write("Competitors Table:\n");
             for (AMScompetitor competitor : competitorList) {
                 if (competitor != null) {
