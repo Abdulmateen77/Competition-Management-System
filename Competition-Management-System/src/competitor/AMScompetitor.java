@@ -42,7 +42,7 @@ public class AMScompetitor {
         this.scores = scores;
     }
 
-    // Getter methods for accessing competitor details
+    //Getter methods for accessing competitor details
     public String getName() {
         return name;
     }
@@ -74,12 +74,12 @@ public class AMScompetitor {
     public static int[] getScores() {
         return scores;
     }
-    // Method to set scores for a competitor
+    //Method to set scores for a competitor
     public static void setScores(double score1, double score2, double score3, double score4) {
         scores = new int[]{(int) score1, (int) score2, (int) score3, (int) score4};
     }
 
-    // Method to register a new competitor
+    //Method to register a new competitor
     public int registerCompetitor(String name, int age, String email, String category, String level) throws IOException {
 
         //Validate data using the Verification class
