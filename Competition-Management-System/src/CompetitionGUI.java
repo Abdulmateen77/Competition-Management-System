@@ -21,9 +21,9 @@ public class CompetitionGUI extends Component {
         initialize();
     }
 
-     // Method to set up the GUI components
+     //Method to set up the GUI components
     private void initialize() {
-        // Creates a JFrame
+        //Creates a JFrame
         frame = new JFrame("Competition Management System");
         frame.setSize(800, 900);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
