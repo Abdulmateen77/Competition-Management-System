@@ -28,9 +28,9 @@ public class CompetitionGUI extends Component {
         frame.setSize(800, 900);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // 1: View Table of Competitors
+        //1: View Table of Competitors
         JButton ViewCompetitorbutton = new JButton("View List of Competitors");
-        // 2: View and alter Competitors details
+        //2: View and alter Competitors details
         JButton ViewandAlterbutton = new JButton("View and Alter Competitor Score");
         // 3: View Specific Competitors details
         JButton ViewDetailsbutton = new JButton("View Competitor Details");
