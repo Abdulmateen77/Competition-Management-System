@@ -248,7 +248,7 @@ public class CompetitionGUI extends Component {
                 "View Competitor Details",
                 JOptionPane.PLAIN_MESSAGE);
 
-        // Checks if the user entered a competitor number
+        //Checks if the user entered a competitor number
         if (competitorNumberInput != null && !competitorNumberInput.isEmpty()) {
             try {
                 int competitorNumber = Integer.parseInt(competitorNumberInput);
@@ -292,7 +292,7 @@ public class CompetitionGUI extends Component {
         String[] viewOptions = {"Short Details", "Full Details"};
         JComboBox<String> viewComboBox = new JComboBox<>(viewOptions);
 
-        // Creates a custom JPanel to enhance the input dialog
+        //Creates a custom JPanel to enhance the input dialog
         JPanel inputPanel = new JPanel();
         inputPanel.add(new JLabel("Select View Details Format: "));
         inputPanel.add(viewComboBox);
