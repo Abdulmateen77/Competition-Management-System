@@ -81,7 +81,7 @@ public class CompetitionGUI extends Component {
 
         JPanel panel = new JPanel();
 
-        // Adds button to panel
+        //Adds button to panel
         panel.add(ViewCompetitorbutton);
         panel.add(ViewandAlterbutton);
         panel.add(ViewDetailsbutton);
@@ -93,7 +93,7 @@ public class CompetitionGUI extends Component {
         panel.setLayout(new GridLayout(4, 1, 10, 10));
 
         frame.add(panel);
-        // Make the JFrame visible
+        //Make the JFrame visible
         frame.setVisible(true);
 
         frame.setLocationRelativeTo(null);
@@ -104,7 +104,7 @@ public class CompetitionGUI extends Component {
 
         java.util.List<AMScompetitor> competitors = competitorList.getCompetitors();
 
-        // JFrame for displaying the table
+        //JFrame for displaying the table
         JFrame tableCompetitor = new JFrame("Competitor List Table");
         tableCompetitor.setSize(1000, 700);
 
