@@ -154,7 +154,7 @@ public class CompetitionGUI extends Component {
             try {
                 int competitorNumber = Integer.parseInt(competitorNumberInput);
 
-                // Finds the selected competitor
+                //Finds the selected competitor
                 AMScompetitor selectedCompetitor = competitors.stream()
                         .filter(comp -> comp.getCompetitorNumber() == competitorNumber)
                         .findFirst()
@@ -173,7 +173,7 @@ public class CompetitionGUI extends Component {
                     thirdScoreField.setText(String.valueOf(selectedCompetitor.getScores()[2]));
                     fourthScoreField.setText(String.valueOf(selectedCompetitor.getScores()[3]));
 
-                    // Creates a panel to hold the input fields
+                    //Creates a panel to hold the input fields
                     JPanel panel = new JPanel();
                     panel.setLayout(new GridLayout(5, 2));
                     panel.add(new JLabel("First Score:"));
@@ -193,7 +193,7 @@ public class CompetitionGUI extends Component {
                             JOptionPane.OK_CANCEL_OPTION,
                             JOptionPane.PLAIN_MESSAGE);
 
-                    // Checks if the user clicked "OK"
+                    //Checks if the user clicked "OK"
                     if (result == JOptionPane.OK_OPTION) {
                         try {
                             // Update the scores with the values entered by the user
