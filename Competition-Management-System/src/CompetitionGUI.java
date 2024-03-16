@@ -161,13 +161,13 @@ public class CompetitionGUI extends Component {
                         .orElse(null);
 
                 if (selectedCompetitor != null) {
-                    // Displays a GUI for altering scores
+                    //Displays a GUI for altering scores
                     JTextField firstScoreField = new JTextField();
                     JTextField secondScoreField = new JTextField();
                     JTextField thirdScoreField = new JTextField();
                     JTextField fourthScoreField = new JTextField();
 
-                    // Set current scores as default values in the fields
+                    //Set current scores as default values in the fields
                     firstScoreField.setText(String.valueOf(selectedCompetitor.getScores()[0]));
                     secondScoreField.setText(String.valueOf(selectedCompetitor.getScores()[1]));
                     thirdScoreField.setText(String.valueOf(selectedCompetitor.getScores()[2]));
