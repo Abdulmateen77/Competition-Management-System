@@ -31,12 +31,14 @@ public class Verification {
      * Validates the competitor data by performing basic checks.
      * @return True if data is valid, false otherwise
      */
+    
     public boolean validateData() {
         //Basics validation checks
         if (name == null || name.isEmpty()) {
             System.out.println("Name is required.");
             return false;
         }
+        
         if (age == 0) {
             System.out.println("Age is required.");
             return false;
