@@ -41,7 +41,7 @@ public class CompetitionGUI extends Component {
         // 6: Remove Competitors from the List
         JButton Removesbutton = new JButton("Remove Competitor");
 
-        // Adds ActionListener to the button
+        //Adds ActionListener to the button
         ViewCompetitorbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
