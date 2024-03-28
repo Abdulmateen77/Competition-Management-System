@@ -154,7 +154,7 @@ public class CompetitorList {
             writer.write("Max Score: " + findMaxScore() + "\n");
             writer.write("Min Score: " + findMinScore() + "\n");
 
-            // Frequency report
+            //Frequency report
             writer.write("\nFrequency Report:\n");
             Map<Integer, Long> scoreFrequency = calculateScoreFrequency();
             scoreFrequency.forEach((score, count) -> {
