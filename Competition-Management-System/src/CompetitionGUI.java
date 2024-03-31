@@ -253,14 +253,14 @@ public class CompetitionGUI extends Component {
             try {
                 int competitorNumber = Integer.parseInt(competitorNumberInput);
 
-                // Finds the selected competitor
+                //Finds the selected competitor
                 AMScompetitor selectedCompetitor = competitors.stream()
                         .filter(comp -> comp.getCompetitorNumber() == competitorNumber)
                         .findFirst()
                         .orElse(null);
 
                 if (selectedCompetitor != null) {
-                    // Displays the full details of the selected competitor
+                    //Displays the full details of the selected competitor
                     String details = selectedCompetitor.getCompetitorDetails();
                     JOptionPane.showMessageDialog(
                             this,
@@ -329,7 +329,7 @@ public class CompetitionGUI extends Component {
                             .orElse(null);
 
                     if (selectedCompetitor != null) {
-                        // Display details based on the selected view
+                        //Display details based on the selected view
                         if ("Short Details".equals(selectedView)) {
                             String details = selectedCompetitor.getShortDetails();
                             JOptionPane.showMessageDialog(
