@@ -185,7 +185,7 @@ public class CompetitionGUI extends Component {
                     panel.add(new JLabel("Fourth Score:"));
                     panel.add(fourthScoreField);
 
-                    // Shows input dialog with the panel
+                    //Shows input dialog with the panel
                     int result = JOptionPane.showConfirmDialog(
                             this,
                             panel,
@@ -196,7 +196,7 @@ public class CompetitionGUI extends Component {
                     //Checks if the user clicked "OK"
                     if (result == JOptionPane.OK_OPTION) {
                         try {
-                            // Update the scores with the values entered by the user
+                            //Update the scores with the values entered by the user
                             selectedCompetitor.setScores(
                                     Double.parseDouble(firstScoreField.getText()),
                                     Double.parseDouble(secondScoreField.getText()),
@@ -204,7 +204,7 @@ public class CompetitionGUI extends Component {
                                     Double.parseDouble(fourthScoreField.getText())
                             );
 
-                            // Saves the updated data to the CSV file or your data store
+                            //Saves the updated data to the CSV file or your data store
                             competitorList.saveCompetitorScoresToFile("RunCompetitor.csv", selectedCompetitor);
 
                             JOptionPane.showMessageDialog(
