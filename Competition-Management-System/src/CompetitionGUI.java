@@ -297,7 +297,7 @@ public class CompetitionGUI extends Component {
         inputPanel.add(new JLabel("Select View Details Format: "));
         inputPanel.add(viewComboBox);
 
-        // Shows the input dialog with the JComboBox
+        //Shows the input dialog with the JComboBox
         int option = JOptionPane.showConfirmDialog(
                 this,
                 inputPanel,
@@ -305,12 +305,12 @@ public class CompetitionGUI extends Component {
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.PLAIN_MESSAGE);
 
-        // Checks if the user clicked "OK"
+        //Checks if the user clicked "OK"
         if (option == JOptionPane.OK_OPTION) {
-            // Get the selected view option
+            //Get the selected view option
             String selectedView = (String) viewComboBox.getSelectedItem();
 
-            // Prompts the user to enter a competitor number
+            //Prompts the user to enter a competitor number
             String competitorNumberInput = JOptionPane.showInputDialog(
                     this,
                     "Enter Competitor Number:",
