@@ -33,27 +33,27 @@ public class Manager {
                 int choice = scanner.nextInt();
                 String relativePath = "RunCompetitor.csv";
 
-                // Create a CompetitorList and read competitor details from CSV file
+                //Create a CompetitorList and read competitor details from CSV file
                 CompetitorList competitorList = readCompetitorDetails(relativePath);
 
-                // Perform actions based on user's choice
+                //Perform actions based on user's choice
                 if (choice == 1) {
-                    // Display full details for all competitors
+                    //Display full details for all competitors
                     AMScompetitor[] competitorsArray = competitorList.getCompetitors().toArray(new AMScompetitor[0]);
                     for (AMScompetitor competitor : competitorsArray) {
                         System.out.println(competitor.getfullDetails());
                     }
                 } else if (choice == 2) {
-                    // Display short details for a specific competitor
+                    //Display short details for a specific competitor
                     System.out.print("Enter competitor number to display short details: ");
                     int competitorNumber = scanner.nextInt();
                     competitorList.displayShortDetails(competitorNumber);
                 } else if (choice == 3) {
-                    // Generate and display the final report
+                    //Generate and display the final report
                     competitorList.generateFinalReport("FinalReport.txt");
                     System.out.println("View FinalReport.txt file for the summary report");
                 } else if (choice == 4) {
-                    // Exit the program
+                    //Exit the program
                     System.out.println("Exiting program. Goodbye!");
                     scanner.close();
                     System.exit(0);
