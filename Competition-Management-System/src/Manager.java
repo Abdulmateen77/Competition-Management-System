@@ -17,10 +17,10 @@ public class Manager {
         SwingUtilities.invokeLater(() -> new CompetitionGUI());
 
         try {
-            // Create a scanner for user input
+            //Create a scanner for user input
             Scanner scanner = new Scanner(System.in);
 
-            // Continue running the program until user chooses to exit
+            //Continue running the program until user chooses to exit
             while (true) {
                 // Display menu options
                 System.out.println("\nChoose an option:");
