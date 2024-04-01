@@ -58,12 +58,12 @@ public class Manager {
                     scanner.close();
                     System.exit(0);
                 } else {
-                    // Inform the user of an invalid choice
+                    //Inform the user of an invalid choice
                     System.out.println("Invalid choice. Please enter a valid option.");
                 }
             }
         } catch (IOException e) {
-            // Handle IO exception
+            //Handle IO exception
             System.out.println("Error: " + e.getMessage());
         }
     }
