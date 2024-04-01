@@ -22,14 +22,14 @@ public class Manager {
 
             //Continue running the program until user chooses to exit
             while (true) {
-                // Display menu options
+                //Display menu options
                 System.out.println("\nChoose an option:");
                 System.out.println("1 View Full Details for All Competitors");
                 System.out.println("2 View Short Details for a Specific Competitor");
                 System.out.println("3 Generate and Display the Final Report");
                 System.out.println("4 Exit");
 
-                // Read user choice
+                //Read user choice
                 int choice = scanner.nextInt();
                 String relativePath = "RunCompetitor.csv";
 
