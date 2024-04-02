@@ -63,8 +63,10 @@ public class Manager {
                 }
             }
         } catch (IOException e) {
+            
             //Handle IO exception
             System.out.println("Error: " + e.getMessage());
+            
         }
     }
 }
