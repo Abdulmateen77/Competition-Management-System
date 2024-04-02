@@ -1,4 +1,5 @@
 package competitor;
+
 /**
  * The Verification class is responsible for validating and storing competitor information.
  */
