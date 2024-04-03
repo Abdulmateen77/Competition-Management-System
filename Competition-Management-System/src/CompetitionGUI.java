@@ -48,12 +48,14 @@ public class CompetitionGUI extends Component {
                 ViewCompetitorList();
             }
         });
+        
         ViewDetailsbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ViewCompetitorDetails();
             }
         });
+        
         ViewFulldetailsbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
