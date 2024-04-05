@@ -7,6 +7,7 @@ package competitor;
 public class Verification {
 
     //Member variables to store competitor details
+    
     public static String name;
     private static int age;
     private static String email;
@@ -60,6 +61,7 @@ public class Verification {
         }
         return true;
     }
+    
 
     /**
      * Prints a message indicating the need to resubmit the form.
