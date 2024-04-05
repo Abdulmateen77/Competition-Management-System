@@ -12,6 +12,7 @@ public class Verification {
     private static String email;
     private static String category;
     private static String level;
+    
     /**
      * Constructor for creating a Verification object with competitor details.
      * @param name Competitor's name
@@ -20,6 +21,7 @@ public class Verification {
      * @param category Competitor's category
      * @param level Competitor's level
      */
+    
     public Verification(String name, int age, String email, String category, String level) {
         Verification.name = name;
         Verification.age = age;
