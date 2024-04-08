@@ -7,7 +7,6 @@ package competitor;
 public class Verification {
 
     //Member variables to store competitor details
-    
     public static String name;
     private static int age;
     private static String email;
@@ -22,6 +21,7 @@ public class Verification {
      * @param category Competitor's category
      * @param level Competitor's level
      */
+    
     
     public Verification(String name, int age, String email, String category, String level) {
         Verification.name = name;
