@@ -61,7 +61,6 @@ public class Verification {
         }
         return true;
     }
-    
 
     /**
      * Prints a message indicating the need to resubmit the form.
