@@ -21,11 +21,9 @@ public class AMScompetitor {
     private Verification verification;
 
     //Static variable to store a list of competitors
-    
     public static CompetitorList competitorList;
 
     //Constructor for creating a competitor with basic details
-    
     public AMScompetitor(String name, int age, String email, String category, String level) {
         this.name = name;
         this.age = age;
