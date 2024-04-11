@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 
-//Class for managing the competition GUI
+// Class for managing the competition GUI
 public class CompetitionGUI extends Component {
 
-    //List of competitors
+    // List of competitors
     private CompetitorList competitorList;
     private JFrame frame;
 
