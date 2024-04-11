@@ -15,13 +15,13 @@ public class CompetitionGUI extends Component {
     private CompetitorList competitorList;
     private JFrame frame;
 
-     //Method to set up the GUI components
+     // Method to set up the GUI components
     public CompetitionGUI() {
         this.competitorList = new CompetitorList();
         initialize();
     }
 
-     //Method to set up the GUI components
+     // Method to set up the GUI components
     private void initialize() {
         //Creates a JFrame
         frame = new JFrame("Competition Management System");
