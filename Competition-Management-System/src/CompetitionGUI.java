@@ -11,11 +11,11 @@ import java.util.ArrayList;
 //Class for managing the competition GUI
 public class CompetitionGUI extends Component {
 
-    // List of competitors
+    //List of competitors
     private CompetitorList competitorList;
     private JFrame frame;
 
-     // Method to set up the GUI components
+     //Method to set up the GUI components
     public CompetitionGUI() {
         this.competitorList = new CompetitorList();
         initialize();
