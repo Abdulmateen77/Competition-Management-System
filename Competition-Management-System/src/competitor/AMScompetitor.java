@@ -124,7 +124,7 @@ public class AMScompetitor {
                 return competitor;
             }
         }
-        return null; // No match found
+        return null; //No match found
     }
 
     //Method to calculate the overall score of a competitor
