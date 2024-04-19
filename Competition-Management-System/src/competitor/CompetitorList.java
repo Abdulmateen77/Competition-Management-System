@@ -68,6 +68,7 @@ public class CompetitorList {
                     })
                     .collect(Collectors.toList());
 
+            
             //Writes the entire list back to the file
             try (FileWriter writer = new FileWriter(filePath)) {
                 for (AMScompetitor competitor : updatedCompetitors) {
