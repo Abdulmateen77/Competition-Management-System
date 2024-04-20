@@ -21,7 +21,6 @@ public class Verification {
      * @param level Competitor's level
      */
     
-    
     public Verification(String name, int age, String email, String category, String level) {
         Verification.name = name;
         Verification.age = age;
