@@ -7,7 +7,6 @@ import java.util.Arrays;
 public class AMScompetitor {
 
     private static int competitorCount = 0;
-    
     //Instance variables for competitor details
     private int competitorNumber;
     public String name;
