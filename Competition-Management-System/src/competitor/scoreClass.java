@@ -3,6 +3,7 @@ package competitor;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class ScoreClass {
     //Counter for unique competition and competitor IDs
     private static int competitionIDCounter = 0;
