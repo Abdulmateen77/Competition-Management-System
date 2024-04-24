@@ -49,7 +49,7 @@ public class ScoreClass {
         }
     }
 
-    // Helper method to convert an array to string
+    //Helper method to convert an array to string
     private static String arrayToString(int[] array) {
         StringBuilder result = new StringBuilder("[");
         for (int i = 0; i < array.length; i++) {
