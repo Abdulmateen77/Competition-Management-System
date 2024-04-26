@@ -2,6 +2,7 @@ package competitor;
 
 //Emergency response staff child class
 public class  EmergencyResponse extends staffMember {
+    
     //Inherent properties from parent staff class 
     public EmergencyResponse(String role) {
         super(role);
