@@ -1,7 +1,6 @@
 import competitor.AMScompetitor;
 import competitor.CompetitorList;
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
