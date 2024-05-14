@@ -19,6 +19,7 @@ public class CompetitorList {
     }
 
 
+    
     public static void addCompetitor(AMScompetitor competitor) {
         competitorList.add(competitor);
     }
