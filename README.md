@@ -5,7 +5,6 @@
 The Competition Management System is a Java-based application designed to manage and organize competitors in a competition. It includes functionality for reading competitor details from CSV files, updating scores, generating reports, and providing a simple graphical user interface (GUI).
 
 
-
 ## Features
 
 - **Competitor Management:** Create, edit, and remove competitors.
