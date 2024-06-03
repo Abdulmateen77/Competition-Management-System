@@ -99,6 +99,7 @@ public class CompetitionGUI extends Component {
 
         frame.setLocationRelativeTo(null);
     }
+    
 
     private void ViewCompetitorList() {
         competitorList.readCompetitorDetails("RunCompetitor.csv");
