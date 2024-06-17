@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 import static competitor.CompetitorList.readCompetitorDetails;
 
+
 //The main class responsible for managing competitor information and user interaction
 public class Manager {
     //The main method to initiate the program
