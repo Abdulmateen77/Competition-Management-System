@@ -50,6 +50,7 @@ public class Verification {
             return false;
         }
         if (category == null){
+
             System.out.println("Category is required.");
             return false;
         }
