@@ -1,4 +1,5 @@
 //Import necessary classes from the competitor package and other standard Java libraries
+
 import competitor.AMScompetitor;
 import competitor.CompetitorList;
 
