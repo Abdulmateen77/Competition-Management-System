@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 import java.util.Arrays;
 
 //Competitor list class details
-
 public class CompetitorList {
     private static List<AMScompetitor> competitorList;
 
