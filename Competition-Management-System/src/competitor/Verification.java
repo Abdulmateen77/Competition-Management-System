@@ -5,6 +5,7 @@ package competitor;
 
 public class Verification {
 
+    
     //Member variables to store competitor details
     public static String name;
     private static int age;
