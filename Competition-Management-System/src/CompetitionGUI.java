@@ -18,6 +18,7 @@ public class CompetitionGUI extends Component {
         this.competitorList = new CompetitorList();
         initialize();
     }
+    
      // Method to set up the GUI components
     private void initialize() {
         //Creates a JFrame
