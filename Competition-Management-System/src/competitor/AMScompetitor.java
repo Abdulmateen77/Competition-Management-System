@@ -18,6 +18,7 @@ public class AMScompetitor {
     public String level;
     private static int[] scores;
     private Verification verification;
+
     
     //Static variable to store a list of competitors
     public static CompetitorList competitorList;
