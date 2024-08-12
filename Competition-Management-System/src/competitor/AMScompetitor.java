@@ -40,6 +40,7 @@ public class AMScompetitor {
         this.country = country;
         this.scores = scores;
     }
+    
 
     //Getter methods for accessing competitor details
     public String getName() {
