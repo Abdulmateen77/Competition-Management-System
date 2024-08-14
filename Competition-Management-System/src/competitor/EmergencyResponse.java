@@ -12,4 +12,5 @@ public class  EmergencyResponse extends staffMember {
     public void ProvideSupport(){
         System.out.println("providing emergency support... "); ;
     }
+    
 }
