@@ -31,6 +31,7 @@ public class AMScompetitor {
         this.level = level;
     }
 
+    
     //Constructor for creating a competitor with additional details
     public AMScompetitor(int competitorNumber, String name, int age, String gender, String country, int[] scores) {
         this.competitorNumber = competitorNumber;
