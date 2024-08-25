@@ -12,7 +12,6 @@ public class CompetitionGUI extends Component {
     //List of competitors
     private CompetitorList competitorList;
     private JFrame frame;
-
     
      //Method to set up the GUI components
     public CompetitionGUI() {
