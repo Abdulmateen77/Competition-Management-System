@@ -11,6 +11,7 @@ public class Verification {
     private static String email;
     private static String category;
     private static String level;
+
     
     /**
      * Constructor for creating a Verification object with competitor details.
